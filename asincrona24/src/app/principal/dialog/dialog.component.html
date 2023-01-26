@@ -1,0 +1,24 @@
+<section class="example-card">
+  <mat-card class="card" >
+    <mat-card-content>
+      <div class="contenedor">
+        <img src="assets/angular.png" alt="">
+        <span>Angular Material</span>
+      </div>
+        <ol>
+          <li>
+            <mat-form-field appearance="fill">
+              <mat-label>Cual es tu nombre?</mat-label>
+              <input matInput [(ngModel)]="name">
+            </mat-form-field>
+          </li>
+          <li>
+            <button mat-raised-button (click)="openDialog()">Abrir Dialog</button>
+          </li>
+          <li *ngIf="depor">
+            Tu deporte favorito es: <i>{{depor}}</i>
+          </li>
+        </ol>
+    </mat-card-content>
+  </mat-card>
+</section>
